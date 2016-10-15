@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5310EAC21DB2BF9800141233 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310EAC01DB2BF9800141233 /* LoginViewController.swift */; };
+		5310EAC31DB2BF9800141233 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5310EAC11DB2BF9800141233 /* LoginViewController.xib */; };
+		5310EACC1DB2D5DE00141233 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5310EACE1DB2D5DE00141233 /* Localizable.strings */; };
+		5310EAD01DB2D60F00141233 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310EACF1DB2D60F00141233 /* Colors.swift */; };
 		9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CB1DAAB085001C6951 /* AppDelegate.swift */; };
 		9161F8CE1DAAB085001C6951 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CD1DAAB085001C6951 /* FirstViewController.swift */; };
 		9161F8D01DAAB085001C6951 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CF1DAAB085001C6951 /* SecondViewController.swift */; };
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5310EAC01DB2BF9800141233 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5310EAC11DB2BF9800141233 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		5310EACA1DB2CEDB00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		5310EACB1DB2CEDC00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5310EACD1DB2D5DE00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5310EACF1DB2D60F00141233 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9161F8C81DAAB085001C6951 /* nutripro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nutripro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9161F8CB1DAAB085001C6951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9161F8CD1DAAB085001C6951 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5310EABE1DB2BF7D00141233 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5310EAC01DB2BF9800141233 /* LoginViewController.swift */,
+				5310EAC11DB2BF9800141233 /* LoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		5310EAC41DB2C0FB00141233 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5310EACE1DB2D5DE00141233 /* Localizable.strings */,
+				5310EACF1DB2D60F00141233 /* Colors.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		9161F8BF1DAAB085001C6951 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +127,8 @@
 		9161F8CA1DAAB085001C6951 /* nutripro */ = {
 			isa = PBXGroup;
 			children = (
+				5310EAC41DB2C0FB00141233 /* Constants */,
+				5310EABE1DB2BF7D00141233 /* Login */,
 				9161F8CB1DAAB085001C6951 /* AppDelegate.swift */,
 				9161F8CD1DAAB085001C6951 /* FirstViewController.swift */,
 				9161F8CF1DAAB085001C6951 /* SecondViewController.swift */,
@@ -196,7 +226,7 @@
 				TargetAttributes = {
 					9161F8C71DAAB085001C6951 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = KQ846F45FN;
+						DevelopmentTeam = UC99NA7293;
 						ProvisioningStyle = Automatic;
 					};
 					9161F8DD1DAAB085001C6951 = {
@@ -238,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5310EACC1DB2D5DE00141233 /* Localizable.strings in Resources */,
+				5310EAC31DB2BF9800141233 /* LoginViewController.xib in Resources */,
 				9161F8D81DAAB085001C6951 /* LaunchScreen.storyboard in Resources */,
 				9161F8D51DAAB085001C6951 /* Assets.xcassets in Resources */,
 				9161F8D31DAAB085001C6951 /* Main.storyboard in Resources */,
@@ -265,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5310EAC21DB2BF9800141233 /* LoginViewController.swift in Sources */,
+				5310EAD01DB2D60F00141233 /* Colors.swift in Sources */,
 				9161F8D01DAAB085001C6951 /* SecondViewController.swift in Sources */,
 				9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */,
 				9161F8CE1DAAB085001C6951 /* FirstViewController.swift in Sources */,
@@ -303,10 +337,19 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5310EACE1DB2D5DE00141233 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5310EACD1DB2D5DE00141233 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9161F8D11DAAB085001C6951 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9161F8D21DAAB085001C6951 /* Base */,
+				5310EACA1DB2CEDB00141233 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -315,6 +358,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9161F8D71DAAB085001C6951 /* Base */,
+				5310EACB1DB2CEDC00141233 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -326,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -362,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -376,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -406,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -419,7 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KQ846F45FN;
+				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
@@ -432,7 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KQ846F45FN;
+				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
@@ -518,6 +564,7 @@
 				9161F8F41DAAB085001C6951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9161F8F51DAAB085001C6951 /* Build configuration list for PBXNativeTarget "nutriproTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +573,7 @@
 				9161F8F71DAAB085001C6951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9161F8F81DAAB085001C6951 /* Build configuration list for PBXNativeTarget "nutriproUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +582,7 @@
 				9161F8FA1DAAB085001C6951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
