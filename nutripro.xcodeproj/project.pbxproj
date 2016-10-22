@@ -11,6 +11,10 @@
 		5310EAC31DB2BF9800141233 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5310EAC11DB2BF9800141233 /* LoginViewController.xib */; };
 		5310EACC1DB2D5DE00141233 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5310EACE1DB2D5DE00141233 /* Localizable.strings */; };
 		5310EAD01DB2D60F00141233 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310EACF1DB2D60F00141233 /* Colors.swift */; };
+		5310EAD41DB2E41100141233 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310EAD21DB2E41100141233 /* SignInViewController.swift */; };
+		5310EAD51DB2E41100141233 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5310EAD31DB2E41100141233 /* SignInViewController.xib */; };
+		53E4DAD11DBBCCEE00F5D3E1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4DAD01DBBCCEE00F5D3E1 /* Validator.swift */; };
+		53E4DAD51DBC176600F5D3E1 /* IHKeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */; };
 		9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CB1DAAB085001C6951 /* AppDelegate.swift */; };
 		9161F8CE1DAAB085001C6951 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CD1DAAB085001C6951 /* FirstViewController.swift */; };
 		9161F8D01DAAB085001C6951 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CF1DAAB085001C6951 /* SecondViewController.swift */; };
@@ -45,6 +49,12 @@
 		5310EACB1DB2CEDC00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5310EACD1DB2D5DE00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5310EACF1DB2D60F00141233 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5310EAD21DB2E41100141233 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		5310EAD31DB2E41100141233 /* SignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		53E4DAD01DBBCCEE00F5D3E1 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		53E4DAD21DBC176600F5D3E1 /* nutripro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "nutripro-Bridging-Header.h"; path = "IHKeyboardAvoiding/nutripro-Bridging-Header.h"; sourceTree = "<group>"; };
+		53E4DAD31DBC176600F5D3E1 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHKeyboardAvoiding.h; sourceTree = "<group>"; };
+		53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHKeyboardAvoiding.m; sourceTree = "<group>"; };
 		9161F8C81DAAB085001C6951 /* nutripro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nutripro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9161F8CB1DAAB085001C6951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9161F8CD1DAAB085001C6951 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +99,7 @@
 		5310EABE1DB2BF7D00141233 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5310EAD11DB2E3ED00141233 /* SignIn */,
 				5310EAC01DB2BF9800141233 /* LoginViewController.swift */,
 				5310EAC11DB2BF9800141233 /* LoginViewController.xib */,
 			);
@@ -102,6 +113,41 @@
 				5310EACF1DB2D60F00141233 /* Colors.swift */,
 			);
 			name = Constants;
+			sourceTree = "<group>";
+		};
+		5310EAD11DB2E3ED00141233 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				5310EAD21DB2E41100141233 /* SignInViewController.swift */,
+				5310EAD31DB2E41100141233 /* SignInViewController.xib */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		53E4DAC71DBBCAB100F5D3E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				53E4DACF1DBBCCE400F5D3E1 /* Validator */,
+				53E4DAC81DBBCB4600F5D3E1 /* IHKeyboardAvoiding */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		53E4DAC81DBBCB4600F5D3E1 /* IHKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				53E4DAD31DBC176600F5D3E1 /* IHKeyboardAvoiding.h */,
+				53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */,
+			);
+			path = IHKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		53E4DACF1DBBCCE400F5D3E1 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				53E4DAD01DBBCCEE00F5D3E1 /* Validator.swift */,
+			);
+			name = Validator;
 			sourceTree = "<group>";
 		};
 		9161F8BF1DAAB085001C6951 = {
@@ -127,11 +173,13 @@
 		9161F8CA1DAAB085001C6951 /* nutripro */ = {
 			isa = PBXGroup;
 			children = (
+				53E4DAC71DBBCAB100F5D3E1 /* Utils */,
 				5310EAC41DB2C0FB00141233 /* Constants */,
 				5310EABE1DB2BF7D00141233 /* Login */,
 				9161F8CB1DAAB085001C6951 /* AppDelegate.swift */,
 				9161F8CD1DAAB085001C6951 /* FirstViewController.swift */,
 				9161F8CF1DAAB085001C6951 /* SecondViewController.swift */,
+				53E4DAD21DBC176600F5D3E1 /* nutripro-Bridging-Header.h */,
 				9161F8D11DAAB085001C6951 /* Main.storyboard */,
 				9161F8D41DAAB085001C6951 /* Assets.xcassets */,
 				9161F8D61DAAB085001C6951 /* LaunchScreen.storyboard */,
@@ -227,6 +275,7 @@
 					9161F8C71DAAB085001C6951 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UC99NA7293;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					9161F8DD1DAAB085001C6951 = {
@@ -272,6 +321,7 @@
 				5310EAC31DB2BF9800141233 /* LoginViewController.xib in Resources */,
 				9161F8D81DAAB085001C6951 /* LaunchScreen.storyboard in Resources */,
 				9161F8D51DAAB085001C6951 /* Assets.xcassets in Resources */,
+				5310EAD51DB2E41100141233 /* SignInViewController.xib in Resources */,
 				9161F8D31DAAB085001C6951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,8 +347,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E4DAD11DBBCCEE00F5D3E1 /* Validator.swift in Sources */,
 				5310EAC21DB2BF9800141233 /* LoginViewController.swift in Sources */,
+				53E4DAD51DBC176600F5D3E1 /* IHKeyboardAvoiding.m in Sources */,
 				5310EAD01DB2D60F00141233 /* Colors.swift in Sources */,
+				5310EAD41DB2E41100141233 /* SignInViewController.swift in Sources */,
 				9161F8D01DAAB085001C6951 /* SecondViewController.swift in Sources */,
 				9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */,
 				9161F8CE1DAAB085001C6951 /* FirstViewController.swift in Sources */,
@@ -465,11 +518,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nutripro/IHKeyboardAvoiding/nutripro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -478,11 +534,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "nutripro/IHKeyboardAvoiding/nutripro-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
