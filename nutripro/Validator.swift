@@ -32,7 +32,7 @@ class Validator: NSObject {
         }
     }
     
-    static func validateSignIn(itSelf:AnyObject, name:NSString, email:NSString) -> Bool {
+    static func validateSignIn(itSelf:AnyObject, name:String, email:String, password:String?, sex:Int, age:Int, weight:Int, heigth:Int) -> Bool {
         return true;
     }
     

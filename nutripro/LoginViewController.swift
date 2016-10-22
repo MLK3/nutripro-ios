@@ -10,12 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet var emailTextField:UITextField!;
-    @IBOutlet var passwordTextField:UITextField!;
-    @IBOutlet var loginBtn:UIButton!;
-    @IBOutlet var signInView:UIView!;
-    @IBOutlet var signInLabel:UILabel!;
-    @IBOutlet var signInBtn:UIButton!;
+    @IBOutlet weak var emailTextField:UITextField!;
+    @IBOutlet weak var passwordTextField:UITextField!;
+    @IBOutlet weak var loginBtn:UIButton!;
+    @IBOutlet weak var signInView:UIView!;
+    @IBOutlet weak var signInLabel:UILabel!;
+    @IBOutlet weak var signInBtn:UIButton!;
     
     @IBAction func sigIn(){
         let view = SignInViewController(nibName: "SignInViewController", bundle: nil);

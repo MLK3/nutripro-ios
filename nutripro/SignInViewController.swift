@@ -8,17 +8,18 @@
 
 import UIKit
 
-class SignInViewController: UIViewController, UITextFieldDelegate {
+class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheetDelegate {
     
-    @IBOutlet var SignInLabel:UILabel!;
-    @IBOutlet var nameTextField:UITextField!;
-    @IBOutlet var emailTextField:UITextField!;
-    @IBOutlet var sexTextField:UITextField!;
-    @IBOutlet var passwordTextField:UITextField!;
-    @IBOutlet var ageTextField:UITextField!;
-    @IBOutlet var weigthTextField:UITextField!;
-    @IBOutlet var heightTextField:UITextField!;
-    @IBOutlet var saveBtn:UIButton!;
+    @IBOutlet weak var SignInLabel:UILabel!;
+    @IBOutlet weak var nameTextField:UITextField!;
+    @IBOutlet weak var emailTextField:UITextField!;
+    @IBOutlet weak var sexTextField:UITextField!;
+    @IBOutlet weak var sexBtn:UIButton!;
+    @IBOutlet weak var passwordTextField:UITextField!;
+    @IBOutlet weak var ageTextField:UITextField!;
+    @IBOutlet weak var weigthTextField:UITextField!;
+    @IBOutlet weak var heightTextField:UITextField!;
+    @IBOutlet weak var saveBtn:UIButton!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         nameTextField.placeholder = String.localizedStringWithFormat("Nome", "namePlaceholder");
         emailTextField.placeholder = String.localizedStringWithFormat("Email", "emailPlaceholder");
         passwordTextField.placeholder = String.localizedStringWithFormat("Senha", "passwordPlaceholder");
-        sexTextField.placeholder = String.localizedStringWithFormat("Sexo", "sexPlaceholder");
+        sexBtn.setTitle(String.localizedStringWithFormat("Sexo", "sexPlaceholder"), for: sexBtn.state);
+        sexBtn.tintColor = Colors.lightGray;
         ageTextField.placeholder = String.localizedStringWithFormat("Idade", "agePlaceholder");
         weigthTextField.placeholder = String.localizedStringWithFormat("Peso", "weigthPlaceholder");
         heightTextField.placeholder = String.localizedStringWithFormat("Altura", "heightPlaceholder");
@@ -47,18 +49,16 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self;
         emailTextField.delegate = self;
         passwordTextField.delegate = self;
-        sexTextField.delegate = self;
         ageTextField.delegate = self;
         weigthTextField.delegate = self;
         heightTextField.delegate = self;
         
         nameTextField.tag = 1;
-        emailTextField.tag = 2;
-        passwordTextField.tag = 3;
-        sexTextField.tag = 4;
-        ageTextField.tag = 5;
-        weigthTextField.tag = 6;
-        heightTextField.tag = 7;
+        emailTextField.tag = nameTextField.tag + 1;
+        passwordTextField.tag = emailTextField.tag + 1;
+        ageTextField.tag = passwordTextField.tag + 1;
+        weigthTextField.tag = ageTextField.tag + 1;
+        heightTextField.tag = weigthTextField.tag + 1;
         
         saveBtn.setTitle(String.localizedStringWithFormat("SALVAR", "sabeBtn"), for: saveBtn.state);
         saveBtn.setTitleColor(Colors.white, for: saveBtn.state);
@@ -75,7 +75,10 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         let nextTag = textField.tag + 1;
         
         let nextResponder = textField.superview?.viewWithTag(nextTag);
-        if ((nextResponder) != nil) {
+        if(nextTag == 4){
+            textField.resignFirstResponder();
+            selectSex();
+        } else if ((nextResponder) != nil) {
             nextResponder?.becomeFirstResponder();
         } else {
             textField.resignFirstResponder();
@@ -88,6 +91,22 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
         IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:textField);
         
         return true;
+    }
+    
+    @IBAction func selectSex(){
+        sexTextField.becomeFirstResponder();
+        sexTextField.resignFirstResponder();
+        
+        let actionSheet = UIActionSheet.init(title: "Selecione seu sexo", delegate: self, cancelButtonTitle: nil, destructiveButtonTitle: "Cancelar", otherButtonTitles: "Masculino", "Feminino");
+        actionSheet.show(in: self.view);
+    }
+    
+    func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIndex: Int) {
+        if(actionSheet.buttonTitle(at: buttonIndex) != "Cancelar"){
+            sexBtn.tintColor = Colors.black
+            sexBtn.setTitle(actionSheet.buttonTitle(at: buttonIndex), for: sexBtn.state);
+            ageTextField.becomeFirstResponder();
+        }
     }
     
 }
