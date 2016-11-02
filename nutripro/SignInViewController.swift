@@ -20,6 +20,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
     @IBOutlet weak var weigthTextField:UITextField!;
     @IBOutlet weak var heightTextField:UITextField!;
     @IBOutlet weak var saveBtn:UIButton!;
+    
+    var activeTextField:UITextField!;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +45,13 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
         sexBtn.setTitle(String.localizedStringWithFormat("Sexo", "sexPlaceholder"), for: sexBtn.state);
         sexBtn.tintColor = Colors.lightGray;
         ageTextField.placeholder = String.localizedStringWithFormat("Idade", "agePlaceholder");
-        weigthTextField.placeholder = String.localizedStringWithFormat("Peso", "weigthPlaceholder");
-        heightTextField.placeholder = String.localizedStringWithFormat("Altura", "heightPlaceholder");
+        weigthTextField.placeholder = String.localizedStringWithFormat("Peso (em cm)", "weigthPlaceholder");
+        heightTextField.placeholder = String.localizedStringWithFormat("Altura (em cm)", "heightPlaceholder");
         
         nameTextField.delegate = self;
         emailTextField.delegate = self;
         passwordTextField.delegate = self;
+        sexTextField.delegate = self;
         ageTextField.delegate = self;
         weigthTextField.delegate = self;
         heightTextField.delegate = self;
@@ -63,10 +66,29 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
         saveBtn.setTitle(String.localizedStringWithFormat("SALVAR", "sabeBtn"), for: saveBtn.state);
         saveBtn.setTitleColor(Colors.white, for: saveBtn.state);
         saveBtn.backgroundColor = Colors.primaryColor();
+        
+        let ageToolBar = UIToolbar.init(frame: CGRect(x:0 , y:0, width:view.frame.width, height:50));
+        ageToolBar.items = [UIBarButtonItem.init(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelNumberPad)), UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil), UIBarButtonItem.init(title: "Retorno", style: UIBarButtonItemStyle.plain, target: self, action: #selector(doneNumberPad))];
+        ageToolBar.sizeToFit();
+        ageTextField.inputAccessoryView = ageToolBar;
+        
+        let weightToolBar = UIToolbar.init(frame: CGRect(x:0 , y:0, width:view.frame.width, height:50));
+        weightToolBar.items = [UIBarButtonItem.init(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelNumberPad)), UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil), UIBarButtonItem.init(title: "Retorno", style: UIBarButtonItemStyle.plain, target: self, action: #selector(doneNumberPad))];
+        weightToolBar.sizeToFit();
+        weigthTextField.inputAccessoryView = weightToolBar;
+        
+        let heightToolBar = UIToolbar.init(frame: CGRect(x:0 , y:0, width:view.frame.width, height:50));
+        heightToolBar.items = [UIBarButtonItem.init(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelNumberPad)), UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil), UIBarButtonItem.init(title: "Retorno", style: UIBarButtonItemStyle.plain, target: self, action: #selector(doneNumberPad))];
+        heightToolBar.sizeToFit();
+        heightTextField.inputAccessoryView = heightToolBar;
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    func cancelNumberPad() -> Void {
+        activeTextField.resignFirstResponder();
+    }
+    
+    func doneNumberPad() -> Void {
+        textFieldShouldReturn(activeTextField);
     }
     
 //MARK: UITextFieldDelegate
@@ -80,6 +102,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
             selectSex();
         } else if ((nextResponder) != nil) {
             nextResponder?.becomeFirstResponder();
+            activeTextField = nextResponder as! UITextField!;
+            IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:activeTextField);
         } else {
             textField.resignFirstResponder();
         }
@@ -87,10 +111,14 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        
-        IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:textField);
-        
+        activeTextField = textField;
         return true;
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if(activeTextField == textField){
+            activeTextField = nil;
+        }
     }
     
     @IBAction func selectSex(){
@@ -106,6 +134,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
             sexBtn.tintColor = Colors.black
             sexBtn.setTitle(actionSheet.buttonTitle(at: buttonIndex), for: sexBtn.state);
             ageTextField.becomeFirstResponder();
+            activeTextField = ageTextField;
+            IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:activeTextField);
         }
     }
     
