@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,50 +25,71 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nutripro_logo" id="BHg-Ia-Bwl">
-                    <frame key="frameInset" minX="18.91%" minY="8.80%" width="62.34%" height="19.19%"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nutripro_logo" translatesAutoresizingMaskIntoConstraints="NO" id="BHg-Ia-Bwl">
+                    <rect key="frame" x="40" y="90" width="240" height="68"/>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="K94-NR-Brv">
-                    <frame key="frameInset" minX="6.25%" minY="37.12%" width="87.50%" height="30.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K94-NR-Brv">
+                    <rect key="frame" x="20" y="198" width="280" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="9Zv-nX-wvT">
-                    <frame key="frameInset" minX="6.25%" minY="46.42%" width="87.50%" height="30.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Zv-nX-wvT">
+                    <rect key="frame" x="20" y="248" width="280" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kAY-JE-ugB">
-                    <frame key="frameInset" minX="6.25%" minY="54.40%" width="87.50%" height="7.22%"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAY-JE-ugB">
+                    <rect key="frame" x="20" y="308" width="280" height="30"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="login" destination="-1" eventType="touchUpInside" id="Y7W-Ca-rCX"/>
+                    </connections>
                 </button>
-                <view contentMode="scaleToFill" misplaced="YES" id="W2J-5r-oCf">
-                    <frame key="frameInset" minX="6.25%" minY="65.14%" width="87.50%" height="3.52%"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2J-5r-oCf">
+                    <rect key="frame" x="20" y="358" width="280" height="20"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ainda não tem um conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hBo-p4-uQH">
-                            <frame key="frameInset" minX="0.0%" minY="0.0%" width="63.04%" height="100.00%"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ainda não tem um conta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-p4-uQH">
+                            <rect key="frame" x="0.0" y="-1" width="177" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="65P-tE-wNa">
-                            <frame key="frameInset" minX="56.96%" minY="0.0%" width="30.36%" height="100.00%"/>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65P-tE-wNa">
+                            <rect key="frame" x="160" y="-1" width="84" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Cadastre-se"/>
+                            <connections>
+                                <action selector="sigIn" destination="-1" eventType="touchUpInside" id="Jlc-ms-KjM"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="woy-nZ-Mjo"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Zv-nX-wvT" secondAttribute="trailing" constant="20" id="1aa-QO-iYL"/>
+                <constraint firstAttribute="trailing" secondItem="K94-NR-Brv" secondAttribute="trailing" constant="20" id="4U6-f0-HTt"/>
+                <constraint firstItem="9Zv-nX-wvT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="5wN-Rf-Vgh"/>
+                <constraint firstItem="kAY-JE-ugB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="6NJ-lr-isk"/>
+                <constraint firstItem="BHg-Ia-Bwl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="Rf6-X8-eFX"/>
+                <constraint firstAttribute="trailing" secondItem="kAY-JE-ugB" secondAttribute="trailing" constant="20" id="U9F-5J-Sgi"/>
+                <constraint firstAttribute="trailing" secondItem="W2J-5r-oCf" secondAttribute="trailing" constant="20" id="VDy-Np-G7d"/>
+                <constraint firstItem="K94-NR-Brv" firstAttribute="top" secondItem="BHg-Ia-Bwl" secondAttribute="bottom" constant="40" id="Yg5-Qc-qJ3"/>
+                <constraint firstItem="kAY-JE-ugB" firstAttribute="top" secondItem="9Zv-nX-wvT" secondAttribute="bottom" constant="30" id="aIL-Xf-9hV"/>
+                <constraint firstItem="9Zv-nX-wvT" firstAttribute="top" secondItem="K94-NR-Brv" secondAttribute="bottom" constant="20" id="asS-k0-7nu"/>
+                <constraint firstItem="W2J-5r-oCf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="i6e-98-7t4"/>
+                <constraint firstItem="W2J-5r-oCf" firstAttribute="top" secondItem="kAY-JE-ugB" secondAttribute="bottom" constant="20" id="mng-t2-LRh"/>
+                <constraint firstItem="K94-NR-Brv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="s2p-yh-9dZ"/>
+                <constraint firstItem="BHg-Ia-Bwl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="uuk-Bk-COU"/>
+                <constraint firstAttribute="trailing" secondItem="BHg-Ia-Bwl" secondAttribute="trailing" constant="40" id="yAU-uQ-gsp"/>
+            </constraints>
             <point key="canvasLocation" x="25" y="53"/>
         </view>
     </objects>

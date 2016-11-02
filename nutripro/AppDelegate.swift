@@ -18,7 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let view = LoginViewController(nibName: "LoginViewController", bundle: nil);
-        window?.rootViewController = view;
+        let nav = UINavigationController();
+        nav.pushViewController(view, animated: true);
+        window?.rootViewController = nav;
         
         return true
     }
