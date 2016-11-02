@@ -43,7 +43,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
         emailTextField.placeholder = String.localizedStringWithFormat("Email", "emailPlaceholder");
         passwordTextField.placeholder = String.localizedStringWithFormat("Senha", "passwordPlaceholder");
         sexBtn.setTitle(String.localizedStringWithFormat("Sexo", "sexPlaceholder"), for: sexBtn.state);
-        sexBtn.tintColor = Colors.lightGray;
+        sexBtn.tintColor = UIColor(red:199/255, green:199/255, blue:205/255, alpha:1);
         ageTextField.placeholder = String.localizedStringWithFormat("Idade", "agePlaceholder");
         weigthTextField.placeholder = String.localizedStringWithFormat("Peso (em cm)", "weigthPlaceholder");
         heightTextField.placeholder = String.localizedStringWithFormat("Altura (em cm)", "heightPlaceholder");
@@ -139,4 +139,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
         }
     }
     
+    @IBAction func signIn(){
+        let view = SugestedDietViewController(nibName: "SugestedDietViewController", bundle: nil);
+        navigationController?.pushViewController(view, animated: true);
+    }
 }

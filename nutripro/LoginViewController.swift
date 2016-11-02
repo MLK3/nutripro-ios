@@ -55,10 +55,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewWillAppear(animated);
         navigationController?.setNavigationBarHidden(true, animated: true);
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
     func setSignInSizes() -> Void {
         signInLabel.sizeToFit();
