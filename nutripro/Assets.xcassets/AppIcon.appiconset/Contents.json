@@ -13,11 +13,17 @@
     {
       "idiom" : "iphone",
       "size" : "29x29",
-      "scale" : "2x"
+      "scale" : "1x"
     },
     {
       "idiom" : "iphone",
       "size" : "29x29",
+      "scale" : "2x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "nutripro_appicon29@3x.png",
       "scale" : "3x"
     },
     {
@@ -29,6 +35,18 @@
       "idiom" : "iphone",
       "size" : "40x40",
       "scale" : "3x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "nutripro_appicon57.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "nutripro_appicon114.png",
+      "scale" : "2x"
     },
     {
       "idiom" : "iphone",
@@ -51,13 +69,15 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon29.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "ipad",
       "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon29@2x.png",
       "scale" : "2x"
     },
     {
@@ -72,6 +92,28 @@
     },
     {
       "idiom" : "ipad",
+      "size" : "50x50",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "ipad",
+      "size" : "50x50",
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon72.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon144.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "ipad",
       "size" : "76x76",
       "scale" : "1x"
     },
@@ -81,9 +123,68 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ipad",
       "size" : "83.5x83.5",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon167.png",
       "scale" : "2x"
+    },
+    {
+      "size" : "57x57",
+      "idiom" : "iphone",
+      "filename" : "nutripro_appicon57@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "size" : "72x72",
+      "idiom" : "ipad",
+      "filename" : "nutripro_appicon72@2x.png",
+      "unassigned" : true,
+      "scale" : "2x"
+    },
+    {
+      "filename" : "nutripro_appicon57@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon72@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon114@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon114@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon144@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon144@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon167@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon167@3x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon1024.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon1024@2x.png",
+      "unassigned" : true
+    },
+    {
+      "filename" : "nutripro_appicon1024@3x.png",
+      "unassigned" : true
     }
   ],
   "info" : {

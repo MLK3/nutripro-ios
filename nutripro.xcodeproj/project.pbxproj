@@ -140,6 +140,7 @@
 			children = (
 				5310EAD21DB2E41100141233 /* SignInViewController.swift */,
 				5310EAD31DB2E41100141233 /* SignInViewController.xib */,
+				53C3C2D81DCA6F16007C4F13 /* SugestedDiet */,
 			);
 			name = SignIn;
 			sourceTree = "<group>";
@@ -147,7 +148,6 @@
 		53C3C2C21DCA628A007C4F13 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				53C3C2D81DCA6F16007C4F13 /* SugestedDiet */,
 				53C3C2C31DCA68A3007C4F13 /* Tabs */,
 				5310EABE1DB2BF7D00141233 /* Login */,
 			);
