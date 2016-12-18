@@ -21,6 +21,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
     @IBOutlet weak var heightTextField:UITextField!;
     @IBOutlet weak var saveBtn:UIButton!;
     
+    var tap:UITapGestureRecognizer!;
+    
     var activeTextField:UITextField!;
 
     override func viewDidLoad() {
@@ -81,6 +83,8 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
         heightToolBar.items = [UIBarButtonItem.init(title: "Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(cancelNumberPad)), UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil), UIBarButtonItem.init(title: "Retorno", style: UIBarButtonItemStyle.plain, target: self, action: #selector(doneNumberPad))];
         heightToolBar.sizeToFit();
         heightTextField.inputAccessoryView = heightToolBar;
+        
+        configGestureToDismissKeyboard();
     }
     
     func cancelNumberPad() -> Void {
@@ -106,6 +110,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
             IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:activeTextField);
         } else {
             textField.resignFirstResponder();
+            activeTextField = nil;
         }
         return false;
     }
@@ -142,5 +147,24 @@ class SignInViewController: UIViewController, UITextFieldDelegate, UIActionSheet
     @IBAction func signIn(){
         let view = SugestedDietViewController(nibName: "SugestedDietViewController", bundle: nil);
         navigationController?.pushViewController(view, animated: true);
+    }
+    
+    func configGestureToDismissKeyboard() -> Void{
+        tap = UITapGestureRecognizer.init(target: self, action:#selector(SignInViewController.dismissKeyboard));
+        tap.numberOfTapsRequired = 1;
+        tap.cancelsTouchesInView = false;
+        view.addGestureRecognizer(tap);
+    }
+    
+    func dismissKeyboard() -> Void {
+        nameTextField.resignFirstResponder();
+        emailTextField.resignFirstResponder();
+        passwordTextField.resignFirstResponder();
+        sexTextField.resignFirstResponder();
+        ageTextField.resignFirstResponder();
+        weigthTextField.resignFirstResponder();
+        heightTextField.resignFirstResponder();
+        
+        view.endEditing(true);
     }
 }
