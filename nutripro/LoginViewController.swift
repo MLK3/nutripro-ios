@@ -17,6 +17,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signInLabel:UILabel!;
     @IBOutlet weak var signInBtn:UIButton!;
     
+    var tap:UITapGestureRecognizer!;
+    
+    
+    
+//    @property UITapGestureRecognizer *tap;
+    
     @IBAction func sigIn(){
         let view = SignInViewController(nibName: "SignInViewController", bundle: nil);
         navigationController?.pushViewController(view, animated: true);
@@ -49,6 +55,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         signInBtn.setTitleColor(Colors.primaryColor(), for: signInBtn.state);
         signInBtn.setTitle(String.localizedStringWithFormat("Cadastre-se", "signInBtn"), for: signInBtn.state);
         setSignInSizes();
+        
+        configGestureToDismissKeyboard();
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,5 +93,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         IHKeyboardAvoiding.setAvoiding(self.view, withTriggerView:textField);
         
         return true;
+    }
+    
+    func configGestureToDismissKeyboard() -> Void{
+        tap = UITapGestureRecognizer.init(target: self, action:#selector(LoginViewController.dismissKeyboard));
+        tap.numberOfTapsRequired = 1;
+        tap.cancelsTouchesInView = false;
+        view.addGestureRecognizer(tap);
+    }
+    
+    func dismissKeyboard() -> Void {
+        emailTextField.resignFirstResponder();
+        passwordTextField.resignFirstResponder();
+        
+        view.endEditing(true);
     }
 }
