@@ -29,6 +29,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func login(){
+        if(Validator.validateLogin(itSelf: self, email: emailTextField.text, password: passwordTextField.text)){
+            
+        }
         print("%@" ,Validator.validateLogin(itSelf: self, email: emailTextField.text, password: passwordTextField.text));
     }
 

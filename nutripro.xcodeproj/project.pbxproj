@@ -362,7 +362,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UC99NA7293;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					9161F8DD1DAAB085001C6951 = {
 						CreatedOnToolsVersion = 8.0;
@@ -617,11 +617,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsimples.nutripro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "20104817-86ca-4837-b08d-c6892a5d9b84";
+				PROVISIONING_PROFILE_SPECIFIER = "Nutripro Adhoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "nutripro/IHKeyboardAvoiding/nutripro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -633,11 +636,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = UC99NA7293;
 				INFOPLIST_FILE = nutripro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oddsix.nutripro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsimples.nutripro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "20104817-86ca-4837-b08d-c6892a5d9b84";
+				PROVISIONING_PROFILE_SPECIFIER = "Nutripro Adhoc";
 				SWIFT_OBJC_BRIDGING_HEADER = "nutripro/IHKeyboardAvoiding/nutripro-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
