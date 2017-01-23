@@ -70,13 +70,13 @@ class SugestedDietViewController: UIViewController {
         fiberTitleLabel.text = "Fibre Alimentar";
         sodiumTitleLabel.text = "Sódio";
         
-        energeticValueRangeLabel.text = "de {min} a {max} {unit}";
-        carbsRangeLabel.text = "de {min} a {max} {unit}";
-        proteinRangeLabel.text = "de {min} a {max} {unit}";
-        totalFatRangeLabel.text = "de {min} a {max} {unit}";
-        satFatRangeLabel.text = "de {min} a {max} {unit}";
-        fiberRangeLabel.text = "de {min} a {max} {unit}";
-        sodiumRangeLabel.text = "de {min} a {max} {unit}";
+        energeticValueRangeLabel.text = "de 2000 a 2500 kcal";
+        carbsRangeLabel.text = "de 300 a 400 g";
+        proteinRangeLabel.text = "de 75 a 90 g";
+        totalFatRangeLabel.text = "de 55 a 80 g";
+        satFatRangeLabel.text = "de 22 a 30 g";
+        fiberRangeLabel.text = "de 25 a 40 g";
+        sodiumRangeLabel.text = "de 2300 a 2800 g";
         
         energeticValueRangeLabel.textColor = Colors.primaryColor();
         carbsRangeLabel.textColor = Colors.primaryColor();

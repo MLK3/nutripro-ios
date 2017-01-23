@@ -15,8 +15,8 @@ class AnalysedPictureViewController: UIViewController, UIImagePickerControllerDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        openCameraButton();
-        // Do any additional setup after loading the view.
+        openCamera();
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +24,7 @@ class AnalysedPictureViewController: UIViewController, UIImagePickerControllerDe
         // Dispose of any resources that can be recreated.
     }
     
-    func openCameraButton() {
+    func openCamera() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             var imagePicker = UIImagePickerController()
             imagePicker.delegate = self
