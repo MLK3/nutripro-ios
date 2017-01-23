@@ -30,7 +30,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func login(){
         if(Validator.validateLogin(itSelf: self, email: emailTextField.text, password: passwordTextField.text)){
-            
+            let tabBarViewController = TabBarViewController.initTabs();
+            let navController = UINavigationController(rootViewController: tabBarViewController)
+            self.present(navController, animated: true, completion: nil)
         }
         print("%@" ,Validator.validateLogin(itSelf: self, email: emailTextField.text, password: passwordTextField.text));
     }
