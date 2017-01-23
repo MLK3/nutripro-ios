@@ -25,7 +25,7 @@
 		53C3C2DC1DCA6F3E007C4F13 /* SugestedDietViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53C3C2DA1DCA6F3E007C4F13 /* SugestedDietViewController.xib */; };
 		53E4DAD11DBBCCEE00F5D3E1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E4DAD01DBBCCEE00F5D3E1 /* Validator.swift */; };
 		53E4DAD51DBC176600F5D3E1 /* IHKeyboardAvoiding.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */; };
-		915C43131E362A6800E5EAF2 /* analysedPictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915C43121E362A6800E5EAF2 /* analysedPictureCell.xib */; };
+		915C43131E362A6800E5EAF2 /* analysedPicturePhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915C43121E362A6800E5EAF2 /* analysedPicturePhotoCell.xib */; };
 		915C43151E362A9100E5EAF2 /* analyzedPictureItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915C43141E362A9100E5EAF2 /* analyzedPictureItemCell.xib */; };
 		915C43171E362AD900E5EAF2 /* analysedPictureButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 915C43161E362AD900E5EAF2 /* analysedPictureButton.xib */; };
 		9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8CB1DAAB085001C6951 /* AppDelegate.swift */; };
@@ -81,7 +81,7 @@
 		53E4DAD21DBC176600F5D3E1 /* nutripro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "nutripro-Bridging-Header.h"; path = "IHKeyboardAvoiding/nutripro-Bridging-Header.h"; sourceTree = "<group>"; };
 		53E4DAD31DBC176600F5D3E1 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHKeyboardAvoiding.h; sourceTree = "<group>"; };
 		53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHKeyboardAvoiding.m; sourceTree = "<group>"; };
-		915C43121E362A6800E5EAF2 /* analysedPictureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analysedPictureCell.xib; sourceTree = "<group>"; };
+		915C43121E362A6800E5EAF2 /* analysedPicturePhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analysedPicturePhotoCell.xib; sourceTree = "<group>"; };
 		915C43141E362A9100E5EAF2 /* analyzedPictureItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analyzedPictureItemCell.xib; sourceTree = "<group>"; };
 		915C43161E362AD900E5EAF2 /* analysedPictureButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analysedPictureButton.xib; sourceTree = "<group>"; };
 		9161F8C81DAAB085001C6951 /* nutripro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nutripro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,7 +253,7 @@
 		915C43111E362A2000E5EAF2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				915C43121E362A6800E5EAF2 /* analysedPictureCell.xib */,
+				915C43121E362A6800E5EAF2 /* analysedPicturePhotoCell.xib */,
 				915C43141E362A9100E5EAF2 /* analyzedPictureItemCell.xib */,
 				915C43161E362AD900E5EAF2 /* analysedPictureButton.xib */,
 			);
@@ -454,7 +454,7 @@
 				5310EAD51DB2E41100141233 /* SignInViewController.xib in Resources */,
 				915C43171E362AD900E5EAF2 /* analysedPictureButton.xib in Resources */,
 				53C3C2DC1DCA6F3E007C4F13 /* SugestedDietViewController.xib in Resources */,
-				915C43131E362A6800E5EAF2 /* analysedPictureCell.xib in Resources */,
+				915C43131E362A6800E5EAF2 /* analysedPicturePhotoCell.xib in Resources */,
 				915C43151E362A9100E5EAF2 /* analyzedPictureItemCell.xib in Resources */,
 				53C3C2D31DCA6B5E007C4F13 /* AnalysedPictureViewController.xib in Resources */,
 				53C3C2D71DCA6B7F007C4F13 /* ProfileViewController.xib in Resources */,

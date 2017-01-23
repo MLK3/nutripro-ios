@@ -11,21 +11,32 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnalysedPictureViewController" customModule="nutripro" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="zDK-hd-PaU" id="QH8-Hf-mMg"/>
+                <outlet property="tableView" destination="KSf-RC-IUV" id="4Zb-zh-FCY"/>
+                <outlet property="view" destination="T7D-1M-RmD" id="era-6r-ifE"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewController id="1Fl-x2-lD5" customClass="AnalysedPictureViewController" customModule="nutripro" customModuleProvider="target">
-            <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zDK-hd-PaU">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                <connections>
-                    <outlet property="dataSource" destination="1Fl-x2-lD5" id="i29-Ih-LvO"/>
-                    <outlet property="delegate" destination="1Fl-x2-lD5" id="bK1-xZ-8JA"/>
-                </connections>
-            </tableView>
-            <point key="canvasLocation" x="33.5" y="86.5"/>
-        </tableViewController>
+        <view contentMode="scaleToFill" id="T7D-1M-RmD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-RC-IUV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="DcA-2S-qMt"/>
+                        <outlet property="delegate" destination="-1" id="VGY-Jm-KZb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KSf-RC-IUV" firstAttribute="leading" secondItem="T7D-1M-RmD" secondAttribute="leading" id="5KE-yj-sdC"/>
+                <constraint firstItem="KSf-RC-IUV" firstAttribute="width" secondItem="T7D-1M-RmD" secondAttribute="width" id="bJf-pI-vBg"/>
+                <constraint firstItem="KSf-RC-IUV" firstAttribute="top" secondItem="T7D-1M-RmD" secondAttribute="top" id="o9I-s8-0pD"/>
+                <constraint firstItem="KSf-RC-IUV" firstAttribute="height" secondItem="T7D-1M-RmD" secondAttribute="height" id="slI-aS-cty"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="117.5"/>
+        </view>
     </objects>
 </document>
