@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AnalysedPictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AnalysedPictureViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let imagePicker = UIImagePickerController()
 
