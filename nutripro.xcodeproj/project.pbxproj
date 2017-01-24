@@ -37,6 +37,8 @@
 		9161F8E31DAAB085001C6951 /* nutriproTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8E21DAAB085001C6951 /* nutriproTests.swift */; };
 		9161F8EE1DAAB085001C6951 /* nutriproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9161F8ED1DAAB085001C6951 /* nutriproUITests.swift */; };
 		D6C686651E36C2D30039AFE7 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C686641E36C2D30039AFE7 /* ServiceRequest.swift */; };
+		D6C686671E36E7860039AFE7 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C686661E36E7860039AFE7 /* WebService.swift */; };
+		D6C6866B1E36EB320039AFE7 /* WebConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6866A1E36EB320039AFE7 /* WebConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		9161F8ED1DAAB085001C6951 /* nutriproUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriproUITests.swift; sourceTree = "<group>"; };
 		9161F8EF1DAAB085001C6951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C686641E36C2D30039AFE7 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		D6C686661E36E7860039AFE7 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D6C6866A1E36EB320039AFE7 /* WebConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			children = (
 				5310EACE1DB2D5DE00141233 /* Localizable.strings */,
 				5310EACF1DB2D60F00141233 /* Colors.swift */,
+				D6C6866A1E36EB320039AFE7 /* WebConstants.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C686611E36C28E0039AFE7 /* ServiceRequest */,
+				D6C686661E36E7860039AFE7 /* WebService.swift */,
 			);
 			name = WebService;
 			sourceTree = "<group>";
@@ -480,6 +486,7 @@
 				53C3C2D21DCA6B5E007C4F13 /* AnalysedPictureViewController.swift in Sources */,
 				53E4DAD11DBBCCEE00F5D3E1 /* Validator.swift in Sources */,
 				53C3C2DB1DCA6F3E007C4F13 /* SugestedDietViewController.swift in Sources */,
+				D6C686671E36E7860039AFE7 /* WebService.swift in Sources */,
 				5310EAC21DB2BF9800141233 /* LoginViewController.swift in Sources */,
 				53C3C2CE1DCA6B1E007C4F13 /* DayResumeViewController.swift in Sources */,
 				53E4DAD51DBC176600F5D3E1 /* IHKeyboardAvoiding.m in Sources */,
@@ -488,6 +495,7 @@
 				53C3C2D61DCA6B7F007C4F13 /* ProfileViewController.swift in Sources */,
 				53C3C2C71DCA68F7007C4F13 /* TabBarViewController.swift in Sources */,
 				5310EAD41DB2E41100141233 /* SignInViewController.swift in Sources */,
+				D6C6866B1E36EB320039AFE7 /* WebConstants.swift in Sources */,
 				9161F8D01DAAB085001C6951 /* SecondViewController.swift in Sources */,
 				9161F8CC1DAAB085001C6951 /* AppDelegate.swift in Sources */,
 				9161F8CE1DAAB085001C6951 /* FirstViewController.swift in Sources */,

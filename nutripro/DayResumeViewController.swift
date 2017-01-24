@@ -49,6 +49,11 @@ class DayResumeViewController: UIViewController {
         dateBtn.layer.borderWidth = 1.0;
         dateBtn.layer.borderColor = Colors.primaryColor().cgColor;
         
+        WebService.getWeekMeal(firstDate: "12122016", serviceBlock:{(result:NSDictionary) ->Void in
+            print(result);
+            
+        });
+        
         
         let energeticValueWidthConstraint = NSLayoutConstraint(item: energeticValueBar, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: energeticValueBarContainer, attribute: NSLayoutAttribute.width, multiplier: 10/150, constant: 0);
         let energeticValueMinConstraint = NSLayoutConstraint(item: energeticValueBarMin, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: energeticValueBarContainer, attribute: NSLayoutAttribute.centerX, multiplier: 70/75, constant: 0);

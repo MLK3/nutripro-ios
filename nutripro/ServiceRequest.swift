@@ -12,13 +12,13 @@ typealias ASServiceBlock = (NSDictionary) -> Void;
 
 class ServiceRequest: NSObject {
     
-    static func requestWithURL(url:String, method:String, body:NSDictionary) -> NSMutableURLRequest{
+    static func requestWithURL(url:String, method:String, body:NSDictionary?) -> NSMutableURLRequest{
         let request = NSMutableURLRequest.init(url: URL.init(string: url)!, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 60.0);
         request.addValue("application/json", forHTTPHeaderField: "Content-Type");
         
-        if(body.allKeys.count > 0){
+        if((body) != nil){
             do{
-                let data = try JSONSerialization.data(withJSONObject: body, options: JSONSerialization.WritingOptions(rawValue: 0));
+                let data = try JSONSerialization.data(withJSONObject: body!, options: JSONSerialization.WritingOptions(rawValue: 0));
                 
                 request.httpBody = data;
             }catch{
@@ -49,7 +49,7 @@ class ServiceRequest: NSObject {
                     }
                 }
             } catch (let errorResponse){
-                NSLog(errorResponse as! String);
+                print(errorResponse);
                 let result = NSDictionary.init();
                 serviceBlock(result);
             }
