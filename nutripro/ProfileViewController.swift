@@ -12,7 +12,17 @@ class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //TODO: criar botão de logout
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "user_email")
+        defaults.set(false, forKey: "is_logged")
+        defaults.synchronize()
+        let loginViewController = LoginViewController.init();
+        let navController = UINavigationController(rootViewController: loginViewController)
+        self.present(navController, animated: true, completion: nil)
+        
+        
         // Do any additional setup after loading the view.
     }
 
