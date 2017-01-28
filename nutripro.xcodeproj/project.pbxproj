@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DA9D20C81457368B93F326A /* Pods_nutripro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B680E6801BE9C9C77AF106E0 /* Pods_nutripro.framework */; };
+		3328B950864709687F250E0D /* Pods_nutriproTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447F9389C2B0C748CEC64DF6 /* Pods_nutriproTests.framework */; };
+		506A2DEBF1DE916C668AE31C /* Pods_nutriproUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7078F911D9E4705F15249D8C /* Pods_nutriproUITests.framework */; };
 		5310EAC21DB2BF9800141233 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5310EAC01DB2BF9800141233 /* LoginViewController.swift */; };
 		5310EAC31DB2BF9800141233 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5310EAC11DB2BF9800141233 /* LoginViewController.xib */; };
 		5310EACC1DB2D5DE00141233 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5310EACE1DB2D5DE00141233 /* Localizable.strings */; };
@@ -59,6 +62,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0589591F9A2B7C2247A1A3 /* Pods-nutriproTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutriproTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nutriproTests/Pods-nutriproTests.release.xcconfig"; sourceTree = "<group>"; };
+		447F9389C2B0C748CEC64DF6 /* Pods_nutriproTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nutriproTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5310EAC01DB2BF9800141233 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5310EAC11DB2BF9800141233 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		5310EACA1DB2CEDB00141233 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -81,6 +86,10 @@
 		53E4DAD21DBC176600F5D3E1 /* nutripro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "nutripro-Bridging-Header.h"; path = "IHKeyboardAvoiding/nutripro-Bridging-Header.h"; sourceTree = "<group>"; };
 		53E4DAD31DBC176600F5D3E1 /* IHKeyboardAvoiding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHKeyboardAvoiding.h; sourceTree = "<group>"; };
 		53E4DAD41DBC176600F5D3E1 /* IHKeyboardAvoiding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHKeyboardAvoiding.m; sourceTree = "<group>"; };
+		5BD1746C2CCA3724CA30BDFE /* Pods-nutriproUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutriproUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nutriproUITests/Pods-nutriproUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7078F911D9E4705F15249D8C /* Pods_nutriproUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nutriproUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7613D203A32663B91835BA2A /* Pods-nutriproUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutriproUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nutriproUITests/Pods-nutriproUITests.release.xcconfig"; sourceTree = "<group>"; };
+		802EED27DC3C546739EE342D /* Pods-nutripro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutripro.release.xcconfig"; path = "Pods/Target Support Files/Pods-nutripro/Pods-nutripro.release.xcconfig"; sourceTree = "<group>"; };
 		915C43121E362A6800E5EAF2 /* analysedPicturePhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analysedPicturePhotoCell.xib; sourceTree = "<group>"; };
 		915C43141E362A9100E5EAF2 /* analyzedPictureItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analyzedPictureItemCell.xib; sourceTree = "<group>"; };
 		915C43161E362AD900E5EAF2 /* analysedPictureButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = analysedPictureButton.xib; sourceTree = "<group>"; };
@@ -98,9 +107,12 @@
 		9161F8E91DAAB085001C6951 /* nutriproUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nutriproUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9161F8ED1DAAB085001C6951 /* nutriproUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nutriproUITests.swift; sourceTree = "<group>"; };
 		9161F8EF1DAAB085001C6951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B680E6801BE9C9C77AF106E0 /* Pods_nutripro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nutripro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC69EB2255721E7625FD1224 /* Pods-nutripro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutripro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nutripro/Pods-nutripro.debug.xcconfig"; sourceTree = "<group>"; };
 		D6C686641E36C2D30039AFE7 /* ServiceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
 		D6C686661E36E7860039AFE7 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		D6C6866A1E36EB320039AFE7 /* WebConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebConstants.swift; sourceTree = "<group>"; };
+		FCCE045A041CE98DB7645A9E /* Pods-nutriproTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nutriproTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nutriproTests/Pods-nutriproTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA9D20C81457368B93F326A /* Pods_nutripro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3328B950864709687F250E0D /* Pods_nutriproTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506A2DEBF1DE916C668AE31C /* Pods_nutriproUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +282,8 @@
 				9161F8E11DAAB085001C6951 /* nutriproTests */,
 				9161F8EC1DAAB085001C6951 /* nutriproUITests */,
 				9161F8C91DAAB085001C6951 /* Products */,
+				CA67DFD026043578D87E34F0 /* Pods */,
+				9DCF7D53FD5AD1B59880008E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +334,29 @@
 			path = nutriproUITests;
 			sourceTree = "<group>";
 		};
+		9DCF7D53FD5AD1B59880008E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B680E6801BE9C9C77AF106E0 /* Pods_nutripro.framework */,
+				447F9389C2B0C748CEC64DF6 /* Pods_nutriproTests.framework */,
+				7078F911D9E4705F15249D8C /* Pods_nutriproUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA67DFD026043578D87E34F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC69EB2255721E7625FD1224 /* Pods-nutripro.debug.xcconfig */,
+				802EED27DC3C546739EE342D /* Pods-nutripro.release.xcconfig */,
+				FCCE045A041CE98DB7645A9E /* Pods-nutriproTests.debug.xcconfig */,
+				1A0589591F9A2B7C2247A1A3 /* Pods-nutriproTests.release.xcconfig */,
+				5BD1746C2CCA3724CA30BDFE /* Pods-nutriproUITests.debug.xcconfig */,
+				7613D203A32663B91835BA2A /* Pods-nutriproUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6C686601E36C27D0039AFE7 /* WebService */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,9 +381,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9161F8F21DAAB085001C6951 /* Build configuration list for PBXNativeTarget "nutripro" */;
 			buildPhases = (
+				6079DF32E4E7016963225346 /* [CP] Check Pods Manifest.lock */,
 				9161F8C41DAAB085001C6951 /* Sources */,
 				9161F8C51DAAB085001C6951 /* Frameworks */,
 				9161F8C61DAAB085001C6951 /* Resources */,
+				D67833A13EAC9D7A0BDBE101 /* [CP] Embed Pods Frameworks */,
+				6E31F462F58CFEC66F32103C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -358,9 +401,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9161F8F51DAAB085001C6951 /* Build configuration list for PBXNativeTarget "nutriproTests" */;
 			buildPhases = (
+				B6E9DA2B155B06B2799E85B8 /* [CP] Check Pods Manifest.lock */,
 				9161F8DA1DAAB085001C6951 /* Sources */,
 				9161F8DB1DAAB085001C6951 /* Frameworks */,
 				9161F8DC1DAAB085001C6951 /* Resources */,
+				3E8CA422A926B6C14D52BF3D /* [CP] Embed Pods Frameworks */,
+				279102833C79E517443C7D1B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,9 +422,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9161F8F81DAAB085001C6951 /* Build configuration list for PBXNativeTarget "nutriproUITests" */;
 			buildPhases = (
+				4520DE555DD7966349FE016B /* [CP] Check Pods Manifest.lock */,
 				9161F8E51DAAB085001C6951 /* Sources */,
 				9161F8E61DAAB085001C6951 /* Frameworks */,
 				9161F8E71DAAB085001C6951 /* Resources */,
+				8E948B0A92F86F9822CBCA0E /* [CP] Embed Pods Frameworks */,
+				F58BB3E1AF62BE113F4F763C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,6 +526,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279102833C79E517443C7D1B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutriproTests/Pods-nutriproTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E8CA422A926B6C14D52BF3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutriproTests/Pods-nutriproTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4520DE555DD7966349FE016B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6079DF32E4E7016963225346 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E31F462F58CFEC66F32103C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutripro/Pods-nutripro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E948B0A92F86F9822CBCA0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutriproUITests/Pods-nutriproUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E9DA2B155B06B2799E85B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D67833A13EAC9D7A0BDBE101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutripro/Pods-nutripro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58BB3E1AF62BE113F4F763C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nutriproUITests/Pods-nutriproUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9161F8C41DAAB085001C6951 /* Sources */ = {
@@ -662,6 +849,7 @@
 		};
 		9161F8F31DAAB085001C6951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC69EB2255721E7625FD1224 /* Pods-nutripro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -681,6 +869,7 @@
 		};
 		9161F8F41DAAB085001C6951 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 802EED27DC3C546739EE342D /* Pods-nutripro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -699,6 +888,7 @@
 		};
 		9161F8F61DAAB085001C6951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCCE045A041CE98DB7645A9E /* Pods-nutriproTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -714,6 +904,7 @@
 		};
 		9161F8F71DAAB085001C6951 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0589591F9A2B7C2247A1A3 /* Pods-nutriproTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -729,6 +920,7 @@
 		};
 		9161F8F91DAAB085001C6951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD1746C2CCA3724CA30BDFE /* Pods-nutriproUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KQ846F45FN;
@@ -743,6 +935,7 @@
 		};
 		9161F8FA1DAAB085001C6951 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7613D203A32663B91835BA2A /* Pods-nutriproUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KQ846F45FN;
