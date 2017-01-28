@@ -16,12 +16,13 @@ class Validator: NSObject {
             let emailRegex = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
             let test = NSPredicate(format: "SELF MATCHES %@", emailRegex);
             if(test.evaluate(with: email)){
-                if((password?.characters.count)! < 6){
-                    makeAlert(itSelf: itSelf, title: "A senha precisa ter 6 ou mais dígitos");
-                    return false;
-                } else {
-                    return true;
-                }
+//                if((password?.characters.count)! < 6){
+//                    makeAlert(itSelf: itSelf, title: "A senha precisa ter 6 ou mais dígitos");
+//                    return false;
+//                } else {
+//                    return true;
+//                }
+                return true;
             } else {
                 makeAlert(itSelf: itSelf, title: "Por favor utilize um email válido");
                 return false;

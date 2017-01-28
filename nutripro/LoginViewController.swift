@@ -30,6 +30,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func login(){
         if(Validator.validateLogin(itSelf: self, email: emailTextField.text, password: passwordTextField.text)){
+            UserDefaults.standard.setValue(emailTextField.text, forKey: "user_email")
+            UserDefaults.standard.set(true, forKey: "is_logged")
+            
             let tabBarViewController = TabBarViewController.initTabs();
             let navController = UINavigationController(rootViewController: tabBarViewController)
             self.present(navController, animated: true, completion: nil)
@@ -39,6 +42,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if((UserDefaults.standard.bool(forKey: "is_logged"))){
+            let tabBarViewController = TabBarViewController.initTabs();
+            let navController = UINavigationController(rootViewController: tabBarViewController)
+            self.present(navController, animated: true, completion: nil)
+            };
         
         navigationController?.setNavigationBarHidden(true, animated: true);
         
