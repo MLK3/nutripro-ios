@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,25 +14,32 @@
             <connections>
                 <outlet property="carbsBar" destination="A6F-Qb-ccu" id="0so-gz-Qi0"/>
                 <outlet property="carbsBarContainer" destination="xBn-mU-HkM" id="5dz-Z6-0NH"/>
+                <outlet property="carbsBarMax" destination="GUi-lZ-PmL" id="LQi-yO-ZZW"/>
                 <outlet property="carbsBarMin" destination="rnU-Rd-QEt" id="W7l-rt-gwi"/>
                 <outlet property="dateBtn" destination="7XQ-ng-4Xr" id="22O-Uy-eJR"/>
                 <outlet property="energeticValueBar" destination="zAg-mW-AXs" id="VrG-C5-z8j"/>
                 <outlet property="energeticValueBarContainer" destination="021-7T-BOO" id="jDm-Ps-Cep"/>
+                <outlet property="energeticValueBarMax" destination="0BA-h4-jxA" id="H9f-aq-Rpj"/>
                 <outlet property="energeticValueBarMin" destination="ANP-O7-HBz" id="c4P-UU-cV2"/>
                 <outlet property="fiberBar" destination="U5m-Xj-8O4" id="vbf-rh-d4z"/>
                 <outlet property="fiberBarContainer" destination="UKA-Mi-VOM" id="3Jd-m1-AQx"/>
+                <outlet property="fiberBarMax" destination="l2Z-Zs-66K" id="B5l-ZF-9hL"/>
                 <outlet property="fiberBarMin" destination="7TE-Br-CJS" id="eHX-n3-eIS"/>
                 <outlet property="proteinBar" destination="wH9-VD-Alk" id="gVm-wU-vUZ"/>
                 <outlet property="proteinBarContainer" destination="jov-3d-ux7" id="FUP-yF-grW"/>
+                <outlet property="proteinBarMax" destination="FEA-rY-3p4" id="9Cd-m1-Jvw"/>
                 <outlet property="proteinBarMin" destination="b86-Fx-jlR" id="pCF-cQ-5U2"/>
                 <outlet property="satFatBar" destination="nui-7z-aBJ" id="9U0-ad-9NY"/>
                 <outlet property="satFatBarContainer" destination="Z9Q-4B-Ulh" id="qpf-hK-RGu"/>
+                <outlet property="satFatBarMax" destination="FeR-2c-dYn" id="64G-UG-Pwv"/>
                 <outlet property="satFatBarMin" destination="tpZ-36-ZRI" id="ixK-jb-t1d"/>
                 <outlet property="sodiumBar" destination="5Ch-Jm-ofk" id="UV7-Pc-Yeg"/>
                 <outlet property="sodiumBarContainer" destination="t2m-S5-QdE" id="uSV-hS-dRa"/>
+                <outlet property="sodiumBarMax" destination="HuM-8k-PJ8" id="Qmj-al-u8g"/>
                 <outlet property="sodiumBarMin" destination="gay-0T-Ybt" id="YXR-aF-F0d"/>
                 <outlet property="totalFatBar" destination="eIx-hA-yCR" id="Py9-AD-jLi"/>
                 <outlet property="totalFatBarContainer" destination="0Fl-kP-RHb" id="rNM-7b-upr"/>
+                <outlet property="totalFatBarMax" destination="4aj-L1-E66" id="MxB-mC-eGl"/>
                 <outlet property="totalFatBarMin" destination="jmG-4V-wzD" id="AZd-I1-qhd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -89,7 +96,7 @@
                                                 <constraint firstItem="0BA-h4-jxA" firstAttribute="centerX" secondItem="021-7T-BOO" secondAttribute="centerX" multiplier="4:3" id="8QH-wg-8Fw"/>
                                                 <constraint firstItem="zAg-mW-AXs" firstAttribute="leading" secondItem="021-7T-BOO" secondAttribute="leading" id="Az3-tw-96V"/>
                                                 <constraint firstItem="zAg-mW-AXs" firstAttribute="top" secondItem="021-7T-BOO" secondAttribute="top" id="C00-tu-cVw"/>
-                                                <constraint firstItem="ANP-O7-HBz" firstAttribute="centerX" secondItem="021-7T-BOO" secondAttribute="centerX" multiplier="25:75" id="Mqm-nr-QBy"/>
+                                                <constraint firstItem="ANP-O7-HBz" firstAttribute="centerX" secondItem="021-7T-BOO" secondAttribute="centerX" multiplier="25:75" priority="750" id="Mqm-nr-QBy"/>
                                                 <constraint firstAttribute="height" constant="30" id="XOH-fS-rzT"/>
                                                 <constraint firstAttribute="bottom" secondItem="0BA-h4-jxA" secondAttribute="bottom" id="aVM-Nf-5eY"/>
                                                 <constraint firstAttribute="bottom" secondItem="zAg-mW-AXs" secondAttribute="bottom" id="pyX-42-OzN"/>
@@ -168,7 +175,7 @@
                                                 <constraint firstItem="A6F-Qb-ccu" firstAttribute="leading" secondItem="xBn-mU-HkM" secondAttribute="leading" id="Rr2-7f-zTq"/>
                                                 <constraint firstAttribute="bottom" secondItem="GUi-lZ-PmL" secondAttribute="bottom" id="Wli-5q-Myr"/>
                                                 <constraint firstItem="GUi-lZ-PmL" firstAttribute="centerX" secondItem="xBn-mU-HkM" secondAttribute="centerX" multiplier="4:3" id="dQG-gM-DgB"/>
-                                                <constraint firstItem="rnU-Rd-QEt" firstAttribute="centerX" secondItem="xBn-mU-HkM" secondAttribute="centerX" multiplier="25:75" id="f7j-xf-alU"/>
+                                                <constraint firstItem="rnU-Rd-QEt" firstAttribute="centerX" secondItem="xBn-mU-HkM" secondAttribute="centerX" multiplier="25:75" priority="750" id="f7j-xf-alU"/>
                                                 <constraint firstItem="A6F-Qb-ccu" firstAttribute="width" secondItem="xBn-mU-HkM" secondAttribute="width" multiplier="0.5" id="fb9-g3-u09"/>
                                             </constraints>
                                         </view>
@@ -238,7 +245,7 @@
                                             <constraints>
                                                 <constraint firstItem="FEA-rY-3p4" firstAttribute="centerX" secondItem="jov-3d-ux7" secondAttribute="centerX" multiplier="4:3" id="0jx-0G-xWy"/>
                                                 <constraint firstAttribute="bottom" secondItem="FEA-rY-3p4" secondAttribute="bottom" id="43t-2a-6Mm"/>
-                                                <constraint firstItem="b86-Fx-jlR" firstAttribute="centerX" secondItem="jov-3d-ux7" secondAttribute="centerX" multiplier="25:75" id="F4I-XC-VqD"/>
+                                                <constraint firstItem="b86-Fx-jlR" firstAttribute="centerX" secondItem="jov-3d-ux7" secondAttribute="centerX" multiplier="25:75" priority="750" id="F4I-XC-VqD"/>
                                                 <constraint firstItem="wH9-VD-Alk" firstAttribute="width" secondItem="jov-3d-ux7" secondAttribute="width" multiplier="0.5" id="Mok-pE-Qj9"/>
                                                 <constraint firstItem="wH9-VD-Alk" firstAttribute="leading" secondItem="jov-3d-ux7" secondAttribute="leading" id="NL2-Kg-Mpf"/>
                                                 <constraint firstAttribute="bottom" secondItem="b86-Fx-jlR" secondAttribute="bottom" id="OiZ-dh-GtR"/>
@@ -311,7 +318,7 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="deviceRGB"/>
                                             <constraints>
-                                                <constraint firstItem="jmG-4V-wzD" firstAttribute="centerX" secondItem="0Fl-kP-RHb" secondAttribute="centerX" multiplier="25:75" id="0Cv-GS-j7H"/>
+                                                <constraint firstItem="jmG-4V-wzD" firstAttribute="centerX" secondItem="0Fl-kP-RHb" secondAttribute="centerX" multiplier="25:75" priority="750" id="0Cv-GS-j7H"/>
                                                 <constraint firstAttribute="height" constant="30" id="2A6-7z-xzD"/>
                                                 <constraint firstItem="4aj-L1-E66" firstAttribute="centerX" secondItem="0Fl-kP-RHb" secondAttribute="centerX" multiplier="4:3" id="Bcs-Uz-6ez"/>
                                                 <constraint firstItem="eIx-hA-yCR" firstAttribute="leading" secondItem="0Fl-kP-RHb" secondAttribute="leading" id="GYf-ua-cF4"/>
@@ -394,7 +401,7 @@
                                                 <constraint firstItem="nui-7z-aBJ" firstAttribute="top" secondItem="Z9Q-4B-Ulh" secondAttribute="top" id="WPN-XW-kRf"/>
                                                 <constraint firstAttribute="bottom" secondItem="FeR-2c-dYn" secondAttribute="bottom" id="abO-7q-gTq"/>
                                                 <constraint firstItem="nui-7z-aBJ" firstAttribute="leading" secondItem="Z9Q-4B-Ulh" secondAttribute="leading" id="mxa-fJ-3t9"/>
-                                                <constraint firstItem="tpZ-36-ZRI" firstAttribute="centerX" secondItem="Z9Q-4B-Ulh" secondAttribute="centerX" multiplier="25:75" id="vKt-Cl-K1D"/>
+                                                <constraint firstItem="tpZ-36-ZRI" firstAttribute="centerX" secondItem="Z9Q-4B-Ulh" secondAttribute="centerX" multiplier="25:75" priority="750" id="vKt-Cl-K1D"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="máx" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W4-fJ-kS7">
@@ -461,7 +468,7 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="deviceRGB"/>
                                             <constraints>
-                                                <constraint firstItem="7TE-Br-CJS" firstAttribute="centerX" secondItem="UKA-Mi-VOM" secondAttribute="centerX" multiplier="25:75" id="5a5-sI-ABb"/>
+                                                <constraint firstItem="7TE-Br-CJS" firstAttribute="centerX" secondItem="UKA-Mi-VOM" secondAttribute="centerX" multiplier="25:75" priority="750" id="5a5-sI-ABb"/>
                                                 <constraint firstAttribute="bottom" secondItem="7TE-Br-CJS" secondAttribute="bottom" id="DfA-NO-34S"/>
                                                 <constraint firstItem="U5m-Xj-8O4" firstAttribute="width" secondItem="UKA-Mi-VOM" secondAttribute="width" multiplier="0.5" id="Q8L-9S-JdN"/>
                                                 <constraint firstItem="l2Z-Zs-66K" firstAttribute="centerX" secondItem="UKA-Mi-VOM" secondAttribute="centerX" multiplier="4:3" id="TRf-WF-q5c"/>
@@ -537,7 +544,7 @@
                                             <color key="backgroundColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="deviceRGB"/>
                                             <constraints>
                                                 <constraint firstItem="5Ch-Jm-ofk" firstAttribute="width" secondItem="t2m-S5-QdE" secondAttribute="width" multiplier="0.5" id="5RA-4J-yKb"/>
-                                                <constraint firstItem="gay-0T-Ybt" firstAttribute="centerX" secondItem="t2m-S5-QdE" secondAttribute="centerX" multiplier="25:75" id="6dp-Nk-ujz"/>
+                                                <constraint firstItem="gay-0T-Ybt" firstAttribute="centerX" secondItem="t2m-S5-QdE" secondAttribute="centerX" multiplier="25:75" priority="750" id="6dp-Nk-ujz"/>
                                                 <constraint firstItem="5Ch-Jm-ofk" firstAttribute="top" secondItem="t2m-S5-QdE" secondAttribute="top" id="9fi-fH-eyW"/>
                                                 <constraint firstItem="5Ch-Jm-ofk" firstAttribute="leading" secondItem="t2m-S5-QdE" secondAttribute="leading" id="GWF-wp-OqE"/>
                                                 <constraint firstAttribute="height" constant="30" id="Gai-gE-0H5"/>
