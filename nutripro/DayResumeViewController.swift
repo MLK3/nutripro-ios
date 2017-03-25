@@ -56,11 +56,15 @@ class DayResumeViewController: UIViewController {
         dateBtn.layer.borderWidth = 1.0;
         dateBtn.layer.borderColor = Colors.primaryColor().cgColor;
         
+        let teste = Date.init();
+        
+        
+        
         let date = "15/11/2016";
         
 //        WebService.getWeekMeal(firstDate: "12122016", serviceBlock:{(result:NSDictionary) ->Void in
 //            print(result);
-//            
+//
 //            let nutrients = result["nutrients"] as! NSArray;
 //            
 //            for nutrient in nutrients{
